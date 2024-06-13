@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() {
+    this.logMessage('HomePage component has been initialized.');
+  }
 
+  logMessage(message: string): void {
+    console.log(message);
+  }
 }
